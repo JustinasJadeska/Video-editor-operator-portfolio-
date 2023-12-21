@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Typewriter from "../../UI/typewriter/TypeWriter";
+import image from "../../images/ERP-262.jpg"
 
 
 const StyledAboutme = styled.section`
@@ -13,9 +14,21 @@ const StyledAboutme = styled.section`
     .profile-text {
         flex-basis: 40%; 
 
+        .image {
+            display: none;
+            filter: grayscale(100%); 
+        }
+
         h3 {
             font-size: 3rem; 
+            margin-top: 20px;
             margin-bottom: 20px;
+            cursor: pointer;
+
+            &:hover + .image {
+                display: block;
+                width: 300px;
+            }
         }
 
         p {
@@ -34,6 +47,7 @@ const AboutMe = () => {
         <StyledAboutme id="about">
             <div className="profile-text">
                 <h3><Typewriter text="About Me" typingSpeed={75}></Typewriter></h3>
+                <img src={image} alt="" className="image"/>
             </div>
             <div className="profile-text">
                 <p>As a video editor and operator, my expertise
