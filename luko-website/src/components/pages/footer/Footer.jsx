@@ -115,6 +115,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#profileSection">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </nav>
