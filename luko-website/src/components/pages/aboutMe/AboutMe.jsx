@@ -21,6 +21,7 @@ const StyledAboutme = styled.section`
 
         h3 {
             font-size: 3rem; 
+            width: fit-content;
             margin-top: 20px;
             margin-bottom: 20px;
             cursor: pointer;

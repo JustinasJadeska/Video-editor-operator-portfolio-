@@ -102,11 +102,11 @@ const VideoComponent = ({ videoPaths, onMouseEnter, onMouseLeave, onVideoClick }
                 onClick={() => handleClick(video, index)}
                 >
                     <video ref={el => videoRefs.current[index] = el}
-                    autoPlay={isAutoplay} 
+                    // autoPlay={isAutoplay} 
                     src={video.url}
                     controls
                     muted
-                    loop
+                    // loop
                     style={{ width: '100%', height: 'auto' }} 
                     />
                     <div className="video-info">

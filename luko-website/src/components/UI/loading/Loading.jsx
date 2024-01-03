@@ -60,7 +60,7 @@ const Loading = () => {
     return (
         <LoadingContainer>
             <CameraIcon className="bi bi-camera-reels-fill" style={{ filter: `blur(${5 - (progress * 0.05)}px)` }} />
-            <Counter>Loading {progress}%</Counter>
+            <Counter>{progress}%</Counter>
         </LoadingContainer>
     );
 };

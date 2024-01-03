@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import logo from './images/normal.png'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const StyledHeader = styled.header`
     position: relative; 
@@ -40,6 +41,10 @@ const StyledHeader = styled.header`
     }
 
     nav > ul > li:nth-child(2) a:hover {
+        color: rgb(11, 96, 59);
+    }
+
+    nav > ul > li:nth-child(3) a:hover {
         color: rgb(11, 96, 59);
     }
 
@@ -179,6 +184,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#profileSection">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </nav>
@@ -191,6 +197,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#about" onClick={handleLinkClick}>About Me</a></li>
                         <li><a href="#profileSection" onClick={handleLinkClick}>Portfolio</a></li>
+                        <li><a href="#services" onClick={handleLinkClick}>Services</a></li>
                         <li><a href="#contact" onClick={handleLinkClick}>Contacts</a></li>
                     </ul>
                 </nav>
