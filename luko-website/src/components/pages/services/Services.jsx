@@ -33,8 +33,8 @@ const StyledServices = styled.section`
             transition: transform 0.3s ease;
 
             &:hover {
-                color: #158680;
-                cursor: pointer;
+                color: rgb(21, 182, 112);
+                cursor: text;
                 transform: scale(1.05);
             }
         }
@@ -49,7 +49,7 @@ const StyledServices = styled.section`
     .videoTapes {
     
     span {
-        color: #1acdc4;
+        color: rgb(21, 182, 112);
         font-weight: 800;
         text-transform: uppercase;
 
@@ -92,7 +92,7 @@ const Services = () => {
     }
 
     const typingTexts = ["Revisit the echoes of past joys.", "Discover timeless memories.", "Experience digital nostalgia."];
-    const typedText = useTypingEffect(typingTexts, 100, 2000);
+    const typedText = useTypingEffect(typingTexts, 50, 1000);
 
     return ( 
         <StyledServices id='services'>

@@ -22,7 +22,7 @@ const VhsVideo = ({onClose}) => {
     return ( 
         <StyledModal onClick={onClose}>
             <div className="videoContainer">
-                <video src={video} controls autoPlay
+                <video src={video} controls autoPlay 
                 style={{  maxHeight: '90vh' }}
                 ></video>
             </div>
