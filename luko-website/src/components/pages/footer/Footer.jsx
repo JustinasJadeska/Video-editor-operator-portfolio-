@@ -11,7 +11,7 @@ const StyledFooter = styled.section`
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 
     .logo > img {
         width: 200px;
@@ -115,7 +115,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#profileSection">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Expertise</a></li>
                         <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </nav>

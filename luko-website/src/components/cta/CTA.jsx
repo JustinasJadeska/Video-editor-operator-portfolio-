@@ -4,8 +4,8 @@ import Typewriter from "../UI/typewriter/TypeWriter";
 
 const StyledCTA = styled.section`
     min-height: 60vh;
-    background-color: #121212;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
 
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ const StyledCTA = styled.section`
     > h1 {
         font-size: 4rem;
         margin: 0 0 10px 0;
-        background-image: linear-gradient(to right, rgb(250, 250, 250), rgb(39, 218, 105));
+        background-image: linear-gradient(to right, rgb(250, 250, 250), rgb(33, 183, 88));
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent; 
@@ -24,21 +24,21 @@ const StyledCTA = styled.section`
 
     > h2 > a {
         text-decoration: none;
-        color: white;
+        color: #000000;
         font-size: 2rem;
         transition: transform 0.3s ease, color 0.3s ease;
 
         &:hover {
             text-decoration: underline;
             transform: scale(1.5); 
-            color: #ffffff; 
+            color: #000000; 
         }
     }
 
     .tagline {
         font-size: 16px; 
         text-align: center;
-        color: #f9f9f9;
+        color: #000000;
         font-style: italic; 
     }
 

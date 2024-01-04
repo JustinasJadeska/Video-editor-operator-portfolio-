@@ -184,7 +184,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#about">About Me</a></li>
                         <li><a href="#profileSection">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="#services">Expertise</a></li>
                         <li><a href="#contact">Contacts</a></li>
                     </ul>
                 </nav>
@@ -197,7 +197,7 @@ const Header = () => {
                     <ul>
                         <li><a href="#about" onClick={handleLinkClick}>About Me</a></li>
                         <li><a href="#profileSection" onClick={handleLinkClick}>Portfolio</a></li>
-                        <li><a href="#services" onClick={handleLinkClick}>Services</a></li>
+                        <li><a href="#services" onClick={handleLinkClick}>Expertise</a></li>
                         <li><a href="#contact" onClick={handleLinkClick}>Contacts</a></li>
                     </ul>
                 </nav>
