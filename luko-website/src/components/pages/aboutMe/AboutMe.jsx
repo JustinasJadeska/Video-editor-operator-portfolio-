@@ -35,6 +35,18 @@ const StyledAboutme = styled.section`
         p {
             font-size: 16px; 
             line-height: 1.6;
+
+            > span {
+            color: rgb(21, 182, 112);
+            font-weight: 800;
+            text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+            }
         }
     }
 
@@ -44,6 +56,12 @@ const StyledAboutme = styled.section`
 `
 
 const AboutMe = () => {
+
+    const scrollToCTA = () => {
+        const ctaElement = document.getElementById("contact");
+        ctaElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return ( 
         <StyledAboutme id="about">
             <div className="profile-text">
@@ -71,7 +89,7 @@ const AboutMe = () => {
                 creativity, and delivering exceptional results, I invite you to get
                 in touch. Whether it's bringing a commercial to life or capturing the
                 essence of a special wedding day, I'm ready to lend my expertise to
-                your project. Let's connect and discuss how we can
+                your project. <span onClick={scrollToCTA}>Let's connect</span> and discuss how we can
                 create something truly memorable together.
                 </p>
             </div>

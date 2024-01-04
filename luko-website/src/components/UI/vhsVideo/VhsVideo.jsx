@@ -26,8 +26,6 @@ const StyledModal = styled.div`
     }
 `
 
-
-
 const VhsVideo = ({onClose}) => {
 
     return ( 
