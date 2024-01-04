@@ -16,7 +16,7 @@ const StyledCTA = styled.section`
     > h1 {
         font-size: 4rem;
         margin: 0 0 10px 0;
-        background-image: linear-gradient(to right, rgb(250, 250, 250), rgb(33, 183, 88));
+        background-image: linear-gradient(to right, rgb(221, 252, 233), rgb(33, 183, 88));
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent; 
@@ -67,7 +67,7 @@ const StyledCTA = styled.section`
         h1 {
             font-size: 3rem; 
             text-align: center;
-            background-image: linear-gradient(to right bottom, rgb(250, 250, 250), rgb(250, 250, 250), rgb(11, 215, 86), rgb(29, 254, 111));
+            background-image: linear-gradient(to right bottom, rgb(250, 250, 250), rgb(207, 252, 216), rgb(11, 215, 86), rgb(29, 254, 111));
         }
 
         h2 > a {

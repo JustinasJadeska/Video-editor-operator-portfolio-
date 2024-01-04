@@ -23,7 +23,6 @@ const StyledServices = styled.section`
             font-size: 3rem;
             width: fit-content;
             margin: 0;
-            margin-left: -50px;
         }
 
         h2 {
@@ -75,10 +74,43 @@ const StyledServices = styled.section`
     @media (max-width: 768px) {
     .videoEditing, .operator, .videoTapes {
         grid-template-columns: 1fr; 
-        h2, p {
-                padding: 0 10px; 
-            }
+        h1 {
+            padding: 0 0 30px 10px;
+            grid-column: 1 / 2;
+            margin-left: 0;
+        }
+        h2 {
+            grid-column: 1 / 2;
+            padding: 0 10px;
+        }
+        p {
+            grid-column: 1 / 2;
+            padding: 0 10px;
+        }
     }
+}
+
+@media (max-width: 480px) {
+    .videoEditing, .operator, .videoTapes {
+        padding: 20px;
+        grid-template-columns: 1fr; 
+    }
+
+    h1 {
+            grid-column: 1 / 2;
+            font-size: 2.5rem;
+            margin-left: 0;
+            padding: 0 0 30px 10px;
+        }
+        h2 {
+            grid-column: 1 / 2;
+            font-size: 24px;
+        }
+        p {
+            grid-column: 1 / 2;
+            font-size: 14px;
+            padding: 0 20px;
+        }
 }
 
 `

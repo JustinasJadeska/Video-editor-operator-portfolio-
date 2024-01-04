@@ -13,6 +13,17 @@ const StyledModal = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 1000;  
+
+    .videoContainer video {
+        max-width: 100%; 
+        max-height: 90vh; 
+    }
+
+    @media (max-width: 768px) {
+        .videoContainer video {
+            max-width: 100%; 
+        }
+    }
 `
 
 
@@ -23,7 +34,6 @@ const VhsVideo = ({onClose}) => {
         <StyledModal onClick={onClose}>
             <div className="videoContainer">
                 <video src={video} controls autoPlay 
-                style={{  maxHeight: '90vh' }}
                 ></video>
             </div>
         </StyledModal>
