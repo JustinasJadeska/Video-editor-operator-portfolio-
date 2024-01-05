@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import logo from '../../images/normal.png'
+import logo from '../../images/baltas.png'
 
 const StyledFooter = styled.section`
     position: relative; 
     top: 0; 
-    background-color: #FFF; 
+    background-color: #121212; 
+    color: white;
     z-index: 1000; 
     display: flex;
     align-items: center;
@@ -13,7 +14,7 @@ const StyledFooter = styled.section`
     padding: 20px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 
-    .logo > img {
+    .logo > a > img {
         width: 200px;
         height: auto;
     }
@@ -32,7 +33,7 @@ const StyledFooter = styled.section`
         font-weight: 800;
         font-size: 16px;
         text-decoration: none;
-        color: black;
+        color: #fafafa;
     }
 
     nav > ul > li:nth-child(1) a:hover {
@@ -58,7 +59,7 @@ const StyledFooter = styled.section`
 
     .icons > a > i {
         font-size: 1.5rem;
-        color: black;
+        color: #ffffff;
 
         &:hover {
             color: rgb(33, 183, 88);
@@ -94,7 +95,7 @@ const StyledFooter = styled.section`
 `
 
 const CopyrightNotice = styled.p`
-    color: #666; // Example color, set this to whatever fits your design
+    color: #939393; // Example color, set this to whatever fits your design
     font-size: 0.75rem;
     text-align: center;
     margin-top: 20px; // Adjust as needed for your layout
@@ -107,7 +108,9 @@ const Footer = () => {
     return ( 
         <StyledFooter>
             <div className='logo'>
-                <img src={logo} alt="Burba Films Company Logo" />
+                <a href="#" title="Back to top">
+                    <img src={logo} alt="Burba Films Company Logo" />
+                </a>
             </div>
             <div className="icons">
                 <a href="https://www.facebook.com/lukas.burba.9" rel="noreferrer" target="_blank"><i className="bi bi-facebook"></i></a>

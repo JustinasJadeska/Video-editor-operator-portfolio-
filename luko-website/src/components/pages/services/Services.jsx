@@ -74,9 +74,10 @@ const StyledServices = styled.section`
 
     @media (max-width: 768px) {
     .videoEditing, .operator, .videoTapes {
+        padding: 20px;
         grid-template-columns: 1fr; 
         h1 {
-            padding: 0 0 30px 10px;
+            padding: 0 0 50px 10px;
             grid-column: 1 / 2;
             margin-left: 0;
         }
@@ -122,8 +123,8 @@ const StyledVideo = styled.div`
   @media (max-width: 768px) {
     display: block;
     margin-top: 20px;
-    padding-left: 10px;  
-    padding-right: 10px;
+    padding-left: 30px;  
+    padding-right: 30px;
   }
 
   video {

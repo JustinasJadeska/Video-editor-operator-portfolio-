@@ -88,6 +88,11 @@ const StyledHero = styled.section`
             font-size: 50px;
         }
     }
+
+    @media (orientation: landscape) {
+        // Styles for mobile in landscape mode
+        min-height: 100vh; // or any height that works well for your design
+    }
 `
 
 const HeroPage = () => {
