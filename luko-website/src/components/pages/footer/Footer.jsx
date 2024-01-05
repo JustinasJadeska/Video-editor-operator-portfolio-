@@ -36,15 +36,19 @@ const StyledFooter = styled.section`
     }
 
     nav > ul > li:nth-child(1) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
     }
 
     nav > ul > li:nth-child(2) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
     }
 
     nav > ul > li:nth-child(3) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
+    }
+
+    nav > ul > li:nth-child(4) a:hover {
+        color: rgb(33, 183, 88);
     }
 
     .icons {
@@ -57,7 +61,7 @@ const StyledFooter = styled.section`
         color: black;
 
         &:hover {
-            color: rgb(11, 96, 59);
+            color: rgb(33, 183, 88);
         }
     }
 

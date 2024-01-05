@@ -25,6 +25,11 @@ const StyledDiv = styled.div`
             transform: scale(1.03); 
             box-shadow: 0 6px 12px rgba(0,0,0,0.2); 
             cursor: pointer;
+
+            @media (max-width: 600px) {
+                transform: none;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
         }
     }
 
@@ -47,7 +52,7 @@ const StyledDiv = styled.div`
             }
 
             p {
-                font-size: 1rem; // Adjust font size as needed
+                font-size: 1rem; 
                 margin-bottom: 0;
             }
 

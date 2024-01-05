@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { useState } from 'react'
 import VhsVideo from '../../UI/vhsVideo/VhsVideo'
 import useTypingEffect from '../../UI/typingEffect/TypingEffect'
+import video from '../../videos/VHS.mp4'
 
 const StyledServices = styled.section`
     min-height: 100vh;
@@ -115,6 +116,23 @@ const StyledServices = styled.section`
 
 `
 
+const StyledVideo = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-top: 20px;
+    padding-left: 10px;  
+    padding-right: 10px;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+
 const Services = () => {
 
     const [showModal, setShowModal] = useState(false);
@@ -151,9 +169,14 @@ const Services = () => {
                         them into refreshed, modern videos. By reviving vintage footage
                         and infusing it with new life, I ensure that your precious moments
                         are not just safely archived but also reimagined and relived in
-                        a contemporary and dynamic way. <span onClick={toggleModal}>{typedText}</span></p>
+                        a contemporary and dynamic way. <span onClick={toggleModal} aria-label="Tap to view video">{typedText}</span></p>
                     {showModal && <VhsVideo onClose={() => setShowModal(false)} />}
                 </div>
+                <StyledVideo>
+                    <video src={video} type="video/mp4" controls>
+                        Your browser does not support the video tag.
+                    </video>
+                </StyledVideo>
             </div>
         </StyledServices>
      );

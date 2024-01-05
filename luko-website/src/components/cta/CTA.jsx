@@ -67,7 +67,7 @@ const StyledCTA = styled.section`
         h1 {
             font-size: 3rem; 
             text-align: center;
-            background-image: linear-gradient(to right bottom, rgb(250, 250, 250), rgb(207, 252, 216), rgb(11, 215, 86), rgb(29, 254, 111));
+            background-image: linear-gradient(to right bottom, rgb(250, 250, 250), rgb(207, 252, 216), rgb(33, 183, 88), rgb(33, 183, 88));
         }
 
         h2 > a {

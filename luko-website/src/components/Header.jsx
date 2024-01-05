@@ -37,15 +37,15 @@ const StyledHeader = styled.header`
     }
 
     nav > ul > li:nth-child(1) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
     }
 
     nav > ul > li:nth-child(2) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
     }
 
     nav > ul > li:nth-child(3) a:hover {
-        color: rgb(11, 96, 59);
+        color: rgb(33, 183, 88);
     }
 
     nav > ul > li:last-child a {
