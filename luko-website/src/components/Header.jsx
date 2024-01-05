@@ -61,12 +61,25 @@ const StyledHeader = styled.header`
     .burger {
         display: none;
         cursor: pointer;
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
+        div {
+            width: 30px;
+            height: 3px;
+            background-color: black;
+            margin: 6px 0;
+            transition: all 0.3s ease;
+        }
     }
 
-    .burger i.rotated {
-        transform: rotate(180deg);
+    .burger.rotated div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger.rotated div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.rotated div:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
     }
 
     .navBar {
@@ -174,10 +187,9 @@ const Header = () => {
                 <img src={logo} alt="Burba Films Company Logo" />
             </div>
             <div className={`burger ${showMobileMenu ? 'rotated' : ''}`} onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                {showMobileMenu ? 
-                    <i className="bi bi-x-lg"></i> : 
-                    <i className="bi bi-list"></i>   
-                }
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
             <div className={`navBar ${showMobileMenu ? 'active' : ''}`}>
                 <nav>

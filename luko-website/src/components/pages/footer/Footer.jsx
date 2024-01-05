@@ -72,7 +72,7 @@ const StyledFooter = styled.section`
         justify-content: center;
         text-align: center; 
         gap: 20px; 
-        padding: 15px 10px;
+        padding: 30px 10px;
 
         .navBar > nav > ul {
             flex-direction: column; 
