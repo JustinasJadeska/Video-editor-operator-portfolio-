@@ -90,8 +90,7 @@ const StyledHero = styled.section`
     }
 
     @media (orientation: landscape) {
-        // Styles for mobile in landscape mode
-        min-height: 100vh; // or any height that works well for your design
+        min-height: 100vh;
     }
 `
 

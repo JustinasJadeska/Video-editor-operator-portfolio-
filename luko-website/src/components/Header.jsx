@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import logo from './images/normal.png'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const StyledHeader = styled.header`
     position: relative; 
@@ -61,27 +60,45 @@ const StyledHeader = styled.header`
     .burger {
         display: none;
         cursor: pointer;
+        position: relative;
+        width: 35px;
+        height: 25px;
+        align-self: center;
+        top: 10px;
+
         div {
-            width: 30px;
+            position: absolute;
+            left: 0;
+            width: 100%;
             height: 3px;
             background-color: black;
-            margin: 6px 0;
             transition: all 0.3s ease;
+            transform: translateY(-50%);
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: black;
+                transition: all 0.3s ease;
+            }
+            &:before { 
+            top: -10px; 
+            transform: translateY(-50%); 
+            }
+            &:after { 
+                bottom: -10px; 
+                transform: translateY(50%);
+            }
+        }
+
+        &.open div {
+            transform: rotate(135deg);
+            &:before { top: 0; transform: rotate(90deg); }
+            &:after { bottom: 0; transform: rotate(90deg); }
         }
     }
-
-    .burger.rotated div:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-
-    .burger.rotated div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger.rotated div:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
-    }
-
     .navBar {
         @media (max-width: 768px) {
             display: none;
@@ -103,7 +120,7 @@ const StyledHeader = styled.header`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transition: opacity 0.3s ease-in, transform 0.3s ease-in; 
         transform: translateY(-100%);
         opacity: 0;
 
@@ -177,6 +194,10 @@ const Header = () => {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
+    const toggleMobileMenu = () => {
+        setShowMobileMenu(!showMobileMenu);
+    };
+
     const handleLinkClick = () => {
         setShowMobileMenu(false);
     };
@@ -186,9 +207,7 @@ const Header = () => {
             <div className='logo'>
                 <img src={logo} alt="Burba Films Company Logo" />
             </div>
-            <div className={`burger ${showMobileMenu ? 'rotated' : ''}`} onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div></div>
-                <div></div>
+            <div className={`burger ${showMobileMenu ? 'open' : ''}`} onClick={toggleMobileMenu}>
                 <div></div>
             </div>
             <div className={`navBar ${showMobileMenu ? 'active' : ''}`}>
