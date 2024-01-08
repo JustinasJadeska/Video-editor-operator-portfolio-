@@ -89,9 +89,18 @@ const StyledHero = styled.section`
         }
     }
 
-    @media (orientation: landscape) {
-        min-height: 100vh;
+    @media (orientation: landscape)  {
+        min-height: 120vh;
     }
+
+    @media (orientation: landscape) and (min-width: 600px) {
+        min-height: 130vh;
+    }
+
+    @media (orientation: landscape) and (min-width: 900px) {
+        min-height: 140vh;
+    }
+
 `
 
 const HeroPage = () => {
